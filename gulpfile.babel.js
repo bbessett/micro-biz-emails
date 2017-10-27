@@ -121,9 +121,11 @@ function inliner(css) {
   var pipe = lazypipe()
     .pipe($.inlineCss, {
       applyStyleTags: false,
-      removeStyleTags: true,
+      removeStyleTags: true, 
+      inlinePseudoElements:true,
       preserveMediaQueries: true,
       removeLinkTags: false
+
     })
     .pipe($.replace, '<!-- <style> -->', `<style>${mqCss}</style>`)
     .pipe($.replace, '<link rel="stylesheet" type="text/css" href="css/app.css">', '')
@@ -167,6 +169,7 @@ function aws() {
 }
 
 // Send email to Litmus for testing. If no AWS creds then do not replace img urls.
+
 function litmus() {
   var awsURL = !!CONFIG && !!CONFIG.aws && !!CONFIG.aws.url ? CONFIG.aws.url : false;
 

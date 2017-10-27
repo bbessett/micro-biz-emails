@@ -1,0 +1,54 @@
+---
+subject: Confirmation Screening request sent
+---
+{{>full-header}}
+<container>
+  <wrapper class="primary">
+    <callout class="feature blue"> 
+      {{>single-hero-content
+      feat-img-url="https://gallery.mailchimp.com/d5f3b54c6da103e5b391560f5/images/e60b8e21-58bc-4847-af8e-0e189d1ae36d.png"
+      feat-img-alt="Your Background Security Finger Print"
+      feat-title="Sit back, relax, and let your applicant take it from here"
+      feat-desc="You’ve successfully sent a screening request to %%AppEmailAddress%% for consideration in the %%JobTitle%% position."
+      feat-desc-detail=""
+      cta-btn-txt=""
+      cta-btn-link="" 
+      post-cta-paragraph-txt=""
+      }}
+    </callout>
+    {{>next-steps 
+        module-title="Next Steps:"
+        step-1-title=""
+        step-1-desc="Your applicant will receive an email to create an account"
+        step-2-title=""
+        step-2-desc="They’ll enter their information and verify their identity"
+        step-3-title=""
+        step-3-desc="We’ll run their background check and send you the reports."
+    }}
+
+    {{>cta-blue-btn
+        cta-btn-txt="Login to view the details of this request"
+        cta-btn-link="%%LoginLink%%" 
+    }}
+   
+<hr/>
+{{>helplinks
+    help-title = "Helpful FAQS:"
+    help-block-txt-1= "How do I check the status of my last screening request?"
+    help-block-link-1="http://www.google.com"
+    help-block-txt-2="How do I read the criminal report?"
+    help-block-link-2="http://www.google.com"
+    help-block-txt-3="How do I read the credit report?"
+    help-block-link-3="http://www.google.com"
+    help-block-txt-4="Why should I check my applicants credit report?"
+    help-block-link-4="http://www.google.com"
+    help-block-txt-5="How do I retrieve my password?"
+    help-block-link-5="http://www.google.com"
+    help-block-txt-6="How do I change my email address?"
+    help-block-link-6="http://www.google.com"
+    }}
+    {{>signoff}} 
+
+    {{>footer}}
+</container>
+</wrapper>

@@ -1,0 +1,45 @@
+{{#if feat-img-url}}
+        <row>
+          <columns large="12">
+            <center>
+            <img  alt="{{feat-img-alt}}" class="mobile-img" width=200 height=180 src="{{feat-img-url}}">
+            </center>
+          </columns>
+        </row>
+        {{/if}}
+  
+      <row>
+        <columns class="cta-text" large="12">
+          {{#if feat-title}}
+          <h1 class="text-center bold mobile-h1">{{feat-title}}</h1>
+          {{/if}}
+          {{#if application-number}}
+          
+                        <p class="bold">{{application-number}}<p>
+                        <p class="bold">{{applicant-name}}</p>
+                        <p class="bold">{{job-title}}</p>
+          {{/if}}
+          {{#if feat-desc}}
+          <p>{{feat-desc}}<p>
+          {{/if}}
+           {{#if feat-desc-detail}} 
+           <p>{{feat-desc-detail}}</p>
+           {{/if}}
+           {{#if feat-detail-1}}
+           <p><strong>{{feat-detail-1}}</strong></p>
+           <p><strong>{{feat-detail-2}}</strong></p>
+           {{/if}}
+        </columns>
+      </row>
+      {{#if cta-btn-txt}}  
+            <row>
+            <columns small="12" large="12">
+              <spacer size="10"></spacer>
+               <button class="expanded large expand blue-outline" href="{{cta-btn-link}}" target="_blank"><span class="bold all-caps">{{cta-btn-txt}}</span></button>
+              <spacer size="20"></spacer>
+            </columns>
+            </row> 
+      {{/if}}
+      {{#if post-cta-paragraph-txt}} 
+      <row><columns><p>{{post-cta-paragraph-txt}}</p></columns></row>
+      {{/if}}

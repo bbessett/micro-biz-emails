@@ -1,0 +1,36 @@
+---
+subject: Payment failed - Please login and try again
+---
+{{>full-header}}
+<container>
+  <wrapper class="primary">
+    <callout class="feature no-bg"> 
+      {{>single-hero-content
+      feat-img-url="https://gallery.mailchimp.com/d5f3b54c6da103e5b391560f5/images/fe9c98e4-1762-4e86-b23b-5528467fdee7.png"
+      feat-img-alt="Reports are Ready"
+      application-number="%%ApplicationNumber%%"
+      applicant-name="%%AppFirstName%% %%AppLastName%%’s reports are ready to view."
+      job-title="%%JobTitle%%"
+      feat-title="Background check complete! Login to view the results"
+      feat-desc=""
+      feat-desc-detail=""
+      cta-btn-txt="Login and view the reports"
+      cta-btn-link="%%LoginLink%%" 
+      post-cta-paragraph-txt=""
+      }}
+    </callout>
+    {{>helplinks
+        help-title = "Not sure how to read the reports? Our FAQ articles can help:"
+        1-2c-link-txt= "How do I read the criminal report"
+        1-2c-link = "http://www.google.com"
+        1-2c-alt = "criminal report example"
+        1-2c-src = "https://gallery.mailchimp.com/d5f3b54c6da103e5b391560f5/images/928afb88-8c36-4981-ae32-558a7e05a273.png"
+        2-2c-link-txt= "How do I read the credit report"
+        2-2c-link = "http://www.google.com"
+        2-2c-alt = "Credit Report Example"
+        2-2c-src = "https://gallery.mailchimp.com/d5f3b54c6da103e5b391560f5/images/ec34a9b4-0200-45e2-9ef5-db08153b8a72.png"
+        }}
+    {{>signoff}} 
+    {{>footer}}
+</container>
+</wrapper>

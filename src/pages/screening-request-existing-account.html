@@ -1,0 +1,34 @@
+---
+subject: Complete your pre-employment screening request
+---
+{{>full-header}}
+<container>
+  <wrapper class="primary">
+    <callout class="feature no-bg"> 
+      {{>single-hero-content
+      feat-img-url="https://gallery.mailchimp.com/d5f3b54c6da103e5b391560f5/images/659e5d42-d7c6-4cb9-be21-c6a996588307.gif"
+      feat-img-alt="Your Background Security Finger Print"
+      feat-title="Background screening requested"
+      feat-desc="%%EmpFirstName%% %%EmpLastName%% has requested permission to access your: %%ReportsRequested%%  for consideration in the %%JobTitle%% position with %%CompanyName%%."
+      feat-desc-detail="Your reports will be available for you to view once you've completed the screening."
+      cta-btn-txt="Login and accept request"
+      cta-btn-link="%%LoginLink%%>" 
+      post-cta-paragraph-txt=""
+      }}
+    </callout>
+    {{>grey-warning
+      warning-text="To decline this request, please ignore this email or login to your account and click the decline button on your dashboard."
+      }}
+      {{>helplinks
+        help-title = "Have questions? Check out some of our FAQs:"
+        help-block-txt-1= "How do I complete a screening request for an employer?"
+        help-block-link-1="http://www.google.com"
+        help-block-txt-2="How do i see the status of a screening request?"
+        help-block-link-2="http://www.google.com"
+        help-block-txt-3="How do I create an account?"
+        help-block-link-3="http://www.google.com"
+        }}
+    {{>signoff}} 
+    {{>footer}}
+</container>
+</wrapper>

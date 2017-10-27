@@ -1,0 +1,21 @@
+---
+subject: You’ve declined a screening request 
+---
+{{>full-header}}
+<container>
+  <wrapper class="primary">
+    <callout class="feature no-bg"> 
+      {{>single-hero-content
+      feat-img-url="https://gallery.mailchimp.com/d5f3b54c6da103e5b391560f5/images/1048b4d0-feeb-4573-84da-d02aa6551fff.png"
+      feat-img-alt="Declined screening request"
+      feat-title="Your screening request was declined"
+      feat-desc="Your pre-employment screening request has been declined by %%AppEmailAddress%% for the %%JobTitle%% position."
+      cta-btn-txt="Login to your account to send a new screening request"
+      cta-btn-link="%%LoginLink%%" 
+      post-cta-paragraph-txt=""
+      }}
+    </callout>
+    {{>signoff}} 
+    {{>footer}}
+</container> 
+</wrapper>

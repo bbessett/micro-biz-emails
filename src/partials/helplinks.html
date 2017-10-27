@@ -1,0 +1,75 @@
+
+    <row><columns>  
+    <h2 class="bold">{{help-title}}</h2>
+    </columns></row>
+    {{#if 1-2c-link-txt}} 
+    <row class="2-col-block">
+    <columns large="6">
+      {{#if 1-2c-src}}
+      <a href="{{1-2c-link}}">
+      <img src="{{1-2c-src}}" alt="{{1-2c-alt}}"/>
+      </a>
+      {{/if}}
+       <p><a href="{{1-2c-link}}">{{1-2c-link-txt}}</a></p>
+      </columns>
+      <columns large="6">
+        {{#if 2-2c-src}}
+        <a href="{{2-2c-link}}">
+        <img src="{{2-2c-src}}" alt="{{2-2c-alt}}"/>
+        </a>
+        {{/if}}
+        <p><a href="{{2-2c-link}}">{{2-2c-link-txt}}</a></p> 
+       </columns>
+       </row>
+      {{/if}}
+      
+    {{#if help-block-txt-1}}
+    <row>
+      <columns large="4">
+      {{#if img-1-src}}
+      <img src="{{img-1-src}}" alt="{{img-1-alt}}"/>
+      {{/if}}
+       <a href="{{help-block-link-1}}">{{help-block-txt-1}}</a>
+      </columns>
+      <columns large="4">
+        {{#if img-2-src}}
+        <img src="{{img-2-src}}" alt="{{img-2-alt}}"/>
+        {{/if}}
+        <a href="{{help-block-link-2}}">{{help-block-txt-2}}</a>  
+       </columns>
+       <columns large="4">
+        {{#if img-3-src}}
+        <img src="{{img-3-src}}" alt="{{img-3-alt}}"/>
+        {{/if}}
+        <a href="{{help-block-link-3}}">{{help-block-txt-3}}</a>
+       </columns>
+       </row>
+       {{/if}}
+       {{#if help-block-txt-4}}
+       <row>
+       <columns large="4">
+        {{#if img-4-src}}
+        <img src="{{img-4-src}}" alt="{{img-4-alt}}"/>
+        {{/if}}
+        <a href="{{help-block-link-3}}">{{help-block-txt-4}}</a>
+       </columns>
+       {{/if}}
+       {{#if help-block-txt-5}}
+       
+       <columns large="4">
+        {{#if img-5-src}}
+        <img src="{{img-5-src}}" alt="{{img-5-alt}}"/>
+        {{/if}}
+        <a href="{{help-block-link-3}}">{{help-block-txt-5}}</a>
+       </columns>
+       {{/if}}
+       {{#if help-block-txt-6}}
+       <columns large="4">
+        {{#if img-6-src}}
+        <img src="{{img-6-src}}" alt="{{img-6-alt}}"/>
+        {{/if}}
+        <a href="{{help-block-link-3}}">{{help-block-txt-6}}</a>
+       </columns>
+        </row>
+       {{/if}}
+      <spacer size="20"></spacer>

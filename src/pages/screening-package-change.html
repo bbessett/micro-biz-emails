@@ -1,0 +1,27 @@
+---
+subject: Confirmation -  Forgot Password Change Link Email
+---
+{{>full-header}}
+<container>
+  <wrapper class="primary">
+    <callout class="feature no-bg"> 
+      {{>single-hero-content
+      feat-img-url="https://gallery.mailchimp.com/d5f3b54c6da103e5b391560f5/images/2a5c2369-e472-43a6-90c0-22d804d7b08e.png"
+      feat-img-alt="screening package change"
+      application-number=""
+      applicant-name=""
+      job-title=""
+      feat-title="Your screening package has changed"
+      feat-desc="Due to regulations in your applicant’s location, you will not receive a credit report for %%AppFirstName%% %%AppLastName%% for the %%JobTitle%% position."
+      feat-desc-detail="Your pricing has been updated to reflect this change"
+      cta-btn-txt="Login to view your receipt" 
+      cta-btn-link="%%PWResetLink%%" 
+      post-cta-paragraph-txt=""
+      }}
+    </callout>
+
+    
+    {{>signoff}} 
+    {{>footer}}
+</container>
+</wrapper>

@@ -1,0 +1,29 @@
+---
+subject: Payment failed - Please login and try again
+---
+{{>full-header}}
+<container>
+  <wrapper class="primary">
+    <callout class="feature no-bg"> 
+      {{>single-hero-content
+      feat-img-url="https://gallery.mailchimp.com/d5f3b54c6da103e5b391560f5/images/2a5c2369-e472-43a6-90c0-22d804d7b08e.png"
+      feat-img-alt="Account Created"
+      application-number="%%ApplicationNumber%%"
+      applicant-name="%%AppFirstName%% %%AppLastName%%"
+      job-title="%%JobTitle%%"
+      feat-title="Your payment didn’t process"
+      feat-desc="Please enter your payment information again to complete this screening request."
+      feat-desc-detail=""
+      cta-btn-txt="Login to re-enter payment information"
+      cta-btn-link="%%LoginLink%%" 
+      post-cta-paragraph-txt=""
+      }}
+    </callout>
+    {{>grey-warning
+        warning-text="If your payment continues to fail, please try a different card."
+        }}
+
+    {{>signoff}} 
+    {{>footer}}
+</container>
+</wrapper>

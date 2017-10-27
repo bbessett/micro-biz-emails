@@ -1,0 +1,38 @@
+---
+subject: Complete your pre-employment screening request
+---
+{{>full-header}}
+<container>
+  <wrapper class="primary">
+    <callout class="feature blue"> 
+      {{>single-hero-content
+      feat-img-url="https://gallery.mailchimp.com/d5f3b54c6da103e5b391560f5/images/018a33cf-ea09-4604-b277-cbbe39c23e4b.png"
+      feat-img-alt="Account Created"
+      feat-title="Welcome! You’ve successfully created an account"
+      feat-desc="%%EmpFirstName%% %%EmpLastName%% has requested permission to access your: %%ReportsRequested%%  for consideration in the %%JobTitle%% position with %%CompanyName%%."
+      feat-desc-detail="Your reports will be available for you to view once you've completed the screening."
+      cta-btn-txt="Click here to access your account"
+      cta-btn-link="%%LoginLink%%" 
+      post-cta-paragraph-txt=""
+      }}
+    </callout>
+
+      {{>helplinks
+        help-title = "Have questions? Check out some of our FAQs:"
+        help-block-txt-1= "How do I complete a screening request from a employer?"
+        help-block-link-1="http://www.google.com"
+        help-block-txt-2="How do I see the status of my screening request?"
+        help-block-link-2="http://www.google.com"
+        help-block-txt-3="What if I forgot my password?"
+        help-block-link-3="http://www.google.com"
+        help-block-txt-4="How do I see whats on my criminal report?"
+        help-block-link-4="http://www.google.com"
+        help-block-txt-5="How do I see the tradelines on my credit report?"
+        help-block-link-5="http://www.google.com"
+        help-block-txt-6="How do I change my email address?"
+        help-block-link-6="http://www.google.com"
+        }}
+    {{>signoff}} 
+    {{>footer}}
+</container>
+</wrapper>
